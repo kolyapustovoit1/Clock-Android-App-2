@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/text_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="@string/app_name"
+        android:textSize="48sp"
+        android:textColor="@color/primaryText"
+        android:fontFamily="@font/roboto_bold" />
+
+    <!-- App Version -->
+    <TextView
+        android:id="@+id/text_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/version_text"
+        android:textSize="22sp"
+        android:textColor="@color/secondaryText"
+        android:fontFamily="@font/roboto_regular" />
+
+    <!-- Developer Name -->
+    <TextView
+        android:id="@+id/text_developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/developer_text"
+        android:textSize="22sp"
+        android:textColor="@color/secondaryText"
+        android:fontFamily="@font/roboto_light" />
+
+    <!-- Group Name -->
+    <TextView
+        android:id="@+id/text_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_developer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/group_text"
+        android:textSize="22sp"
+        android:textColor="@color/secondaryText"
+        android:fontFamily="@font/roboto_light" />
+
+</RelativeLayout>

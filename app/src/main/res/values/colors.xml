@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App color -->
+    <color name="backgroundColor">#191919</color>
+    <color name="primaryText">@color/white</color>
+    <color name="secondaryText">#BBBBBB</color>
+    <color name="primaryColor">#FF5722</color>
+    <color name="secondaryColor">#03DAC5</color>
+    <color name="primaryDivider">#333333</color>
+</resources>

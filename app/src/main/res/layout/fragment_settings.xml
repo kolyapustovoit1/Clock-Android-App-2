@@ -1,0 +1,39 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <!-- Label for the timezone selection -->
+    <TextView
+        android:id="@+id/timezone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timezone_label"
+        android:textSize="16sp"
+        android:textColor="@color/secondaryText"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Dropdown (Spinner) for timezone selection -->
+    <Spinner
+        android:id="@+id/timezone_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryDivider"
+        android:padding="8dp"
+        android:layout_below="@id/timezone_label" />
+
+    <!-- Button to save the selected timezone -->
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timezone_spinner"
+        android:layout_marginTop="16dp"
+        android:text="@string/save_button"
+        android:textColor="@color/primaryText"
+        android:backgroundTint="@color/primaryColor" />
+</RelativeLayout>

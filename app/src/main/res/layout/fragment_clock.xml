@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <!-- Time display -->
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="@string/default_time"
+        android:textSize="80sp"
+        android:textColor="@color/primaryText"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center" />
+
+    <!-- Date display -->
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/default_date"
+        android:textSize="20sp"
+        android:textColor="@color/secondaryText"
+        android:fontFamily="@font/roboto_regular" />
+
+    <!-- Time zone display -->
+    <TextView
+        android:id="@+id/text_time_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/default_time_zone"
+        android:textSize="18sp"
+        android:textColor="@color/secondaryText"
+        android:fontFamily="@font/roboto_light" />
+
+    <!-- Timer button -->
+    <Button
+        android:id="@+id/btn_timer"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:text="@string/btn_timer"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/primaryText"
+        android:fontFamily="@font/roboto_medium" />
+
+    <!-- Settings button -->
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:text="@string/btn_settings"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/primaryText"
+        android:fontFamily="@font/roboto_medium" />
+
+</RelativeLayout>

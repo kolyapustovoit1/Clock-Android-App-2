@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor">
+
+    <!-- Timer display -->
+    <TextView
+        android:id="@+id/text_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/text_timer"
+        android:textSize="64sp"
+        android:textColor="@color/primaryText"
+        android:fontFamily="@font/roboto_bold" />
+
+    <!-- Control buttons (Start, Pause, Stop) -->
+    <LinearLayout
+        android:id="@+id/controls_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_timer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <!-- Start Button -->
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/start_btn"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/primaryText"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="18sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <!-- Pause/Continue Button -->
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/pause_btn"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/primaryText"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="18sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <!-- Stop Button -->
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/stop_btn"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/primaryText"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="18sp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <!-- Lap Button -->
+    <Button
+        android:id="@+id/btn_lap"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/controls_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/lap_btn"
+        android:backgroundTint="@color/secondaryColor"
+        android:textColor="@color/backgroundColor"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_medium" />
+
+    <!-- Lap times list -->
+    <ListView
+        android:id="@+id/list_laps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_lap"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:padding="16dp"
+        android:divider="@color/primaryDivider"
+        android:dividerHeight="1dp"
+        tools:listitem="@layout/timer_list_item"/>
+
+</RelativeLayout>
