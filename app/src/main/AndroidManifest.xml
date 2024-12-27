@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Clock"
         tools:targetApi="33">
+        <service
+            android:name=".services.TimerService"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -23,4 +28,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
